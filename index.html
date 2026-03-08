@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Card</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='16'>👤</text></svg>">
+    <style>
+        body {
+            font-family: 'Poppins', 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #6a5af9, #d66efd);
+            margin: 0;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1), 0 1px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            max-width: 400px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px) scale(1.05); 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15), 0 5px 15px rgba(0,0,0,0.1);
+            background-color: #f0f4ff; 
+        }
+        .card:hover .profile-img {
+            background-color: #6a5af9; 
+            color: white;    
+            transform: scale(1.1); 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2); 
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            color: #666;
+            margin: 0 auto 20px;
+        }
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .stream {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .bio {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        @media (prefers-color-scheme: dark) {
+            body { background: linear-gradient(to bottom, #2d1b4e, #4b1d6e); }
+            .card { background: #1e1e1e; }
+            .name { color: #ffffff; }
+            .stream { color: #bbbbbb; }
+            .bio { color: #cccccc; }
+            .profile-img { background: #444; color: #ffffff; }
+            .card:hover { 
+                transform: translateY(-10px) scale(1.05);
+                background-color: #2a2a2a; 
+            }
+            .card:hover .profile-img { 
+                background-color: #6a5af9; 
+                color: white; 
+                box-shadow: 0 5px 15px rgba(0,0,0,0.5); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="profile-img">👤</div>
+        <h1 class="name">Rasindu Thimeth</h1>
+        <p class="stream">Information Systems</p>
+        <p class="bio">A dedicated Information Systems student focused on bridging the gap between technology and business. Passionate about data structures, system analysis, and building efficient digital solutions.</p>
+    </div>
+</body>
+</html>
